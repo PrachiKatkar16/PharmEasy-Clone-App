@@ -1,0 +1,93 @@
+.Parent{
+    
+    /* border:1px solid; */
+    
+}
+.logo{
+    position: relative;
+    margin-left: 80px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+    
+}
+.Child1{
+    display: flex;
+}
+.download-button{
+    margin-top: 12px;
+    margin-left: 450px;
+    margin-right: 40px;
+}
+/* For small screens (e.g., mobile devices) */
+@media only screen and (max-width: 768px) {
+    .Parent {
+      flex-direction: column;
+    }
+    .Child1 {
+      flex-direction: column;
+    }
+    .logo {
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .download-button {
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .Child2 {
+       flex-direction: row; 
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  /* For medium screens (e.g., tablets) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .Parent {
+      flex-direction: row;
+    }
+    .Child1 {
+      flex-direction: row;
+    }
+    .logo {
+      margin-left: 40px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .download-button {
+      margin-top: 15px;
+      margin-left: 40px;
+      margin-right: 30px;
+    }
+    .Child2 {
+    flex-direction: row;
+      /* width: 80%; */
+      margin: 0 auto;
+    }
+  }
+  
+  /* For large screens (e.g., desktops) */
+  @media only screen and (min-width: 1025px) {
+    .Parent {
+      flex-direction: row;
+    }
+    .Child1 {
+      flex-direction: row;
+    }
+    .logo {
+      margin-left: 80px;
+      margin-top: 12px;
+      margin-bottom: 18px;
+    }
+    .download-button {
+      margin-top: 12px;
+      margin-left: 450px;
+      margin-right: 40px;
+    }
+    .Child2 {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
